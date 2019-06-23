@@ -7,13 +7,24 @@
 
 html,
 body {
-  margin-top: 10%;
+  margin-top: 8%;
+  /* background-color: #111; */
 }
 
 h1 {
   font-family: BisonX;
+  /* color: gainsboro; */
+}
+
+p {
+  /* color: gainsboro; */
+  font: 400 11px system-ui;
+  text-transform: uppercase;
 }
 
 #guess-btn {
   cursor: pointer;
+  /* background-color: #111; */
+  /* border-color: whitesmoke; */
+  /* color: gainsboro; */
 }
