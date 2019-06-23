@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "BisonX";
+  src: url("./fonts/Bison-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin-top: 10%;
+}
+
+h1 {
+  font-family: BisonX;
+}
+
+#guess-btn {
+  cursor: pointer;
+}
