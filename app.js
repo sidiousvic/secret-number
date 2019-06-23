@@ -67,7 +67,6 @@ guessBtn.addEventListener("click", function() {
 
       console.log(`Player has ${guessesLeft} guesses left`);
       setMessage(
-        `Incorrect. You have ${guessesLeft} guesses left`,
         "orangered"
       );
     }
