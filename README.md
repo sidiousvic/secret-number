@@ -1,5 +1,5 @@
-# secret-number
+# SECRET NUMBER
 
 You have 3 chances. Guess the secret number!
 
-Made with Skeleton.
+Made with Skeleton. ☠︎
