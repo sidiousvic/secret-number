@@ -17,12 +17,12 @@ console.log(`The secret number is ${winningNUm}`);
 console.log(`Player has ${guessesLeft} guesses left`);
 
 // UI elements
-const game = document.querySelector("#game"),
-  minNum = document.querySelector(".min-num"),
-  maxNum = document.querySelector(".max-num"),
-  guessBtn = document.querySelector("#guess-btn"),
-  guessInput = document.querySelector("#guess-input"),
-  message = document.querySelector(".message");
+const game = document.querySelector('#game'),
+  minNum = document.querySelector('.min-num'),
+  maxNum = document.querySelector('.max-num'),
+  guessBtn = document.querySelector('#guess-btn'),
+  guessInput = document.querySelector('#guess-input'),
+  message = document.querySelector('.message');
 
 // assign UI min and max
 minNum.textContent = min;
@@ -31,19 +31,19 @@ maxNum.textContent = max;
 //// EVENT LISTENERS
 
 // reload on game over/play again
-game.addEventListener("mousedown", function(e) {
-  if (e.target.className === "play-again") {
+game.addEventListener('mousedown', function(e) {
+  if (e.target.className === 'play-again') {
     window.location.reload();
   }
 });
 
-guessBtn.addEventListener("click", function() {
+guessBtn.addEventListener('click', function() {
   let guess = parseInt(guessInput.value);
-  console.log("Player guess was ", guess);
+  console.log('Player guess was ', guess);
 
   //validate
   if (isNaN(guess) || guess < min || guess > max) {
-    setMessage(`Please enter a number between ${min} and ${max}`, "orangered");
+    setMessage(`Please enter a number between ${min} and ${max}`, 'orangered');
   }
 
   // check if won
@@ -61,14 +61,12 @@ guessBtn.addEventListener("click", function() {
       // game can continue, wrong answer
 
       // change border color
-      guessInput.style.borderColor = "orangered";
+      guessInput.style.borderColor = 'orangered';
       // clear input
-      guessInput.value = "";
+      guessInput.value = '';
 
-      console.log(`Player has ${guessesLeft} guesses left`);
-      setMessage(
-        "orangered"
-      );
+      console.log();
+      setMessage(`You have ${guessesLeft} guesses left`, 'orangered');
     }
   }
 });
@@ -88,7 +86,7 @@ function setMessage(msg, color) {
 // game over
 function gameOver(won, msg) {
   let color;
-  won === true ? (color = "lime") : (color = "orangered");
+  won === true ? (color = 'lime') : (color = 'orangered');
 
   // disable input
   guessInput.disabled = true;
@@ -98,6 +96,6 @@ function gameOver(won, msg) {
   setMessage(msg, color);
 
   // play again
-  guessBtn.value = "PLAY AGAIN";
-  guessBtn.className += "play-again";
+  guessBtn.value = 'PLAY AGAIN';
+  guessBtn.className += 'play-again';
 }

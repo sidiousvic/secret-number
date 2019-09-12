@@ -1,5 +1,5 @@
 # SECRET NUMBER
 
-You have 3 chances. Guess the secret number!
+A secret number app. ♾
 
-Made with Skeleton. ☠︎
+@sidiousvic
