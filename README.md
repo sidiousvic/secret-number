@@ -2,4 +2,4 @@
 
 A secret number app. ♾
 
-@sidiousvic
+by @sidiousvic
