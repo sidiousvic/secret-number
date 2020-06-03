@@ -1,4 +1,4 @@
-# SECRET NUMBER
+# Secret Number
 
 A secret number app. ♾
 
